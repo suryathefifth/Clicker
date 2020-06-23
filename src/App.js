@@ -1,11 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ClickerPanel from './ClickerPanel.js'
+import UpgradePanel from './UpgradePanel.js'
+
 
 function App() {
   return (
     <div className="App">
-      <p>hi</p>
+      <ClickerPanel></ClickerPanel>
+      <UpgradePanel></UpgradePanel>
     </div>
   );
 }
