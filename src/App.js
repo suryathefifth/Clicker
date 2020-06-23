@@ -3,13 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import ClickerPanel from './ClickerPanel.js'
 import UpgradePanel from './UpgradePanel.js'
-
+import Wrapper from './Wrapper.js'
 
 function App() {
   return (
     <div className="App">
-      <ClickerPanel></ClickerPanel>
-      <UpgradePanel></UpgradePanel>
+
+      <Wrapper> </Wrapper>
+
     </div>
   );
 }
