@@ -1,7 +1,8 @@
 .ClickerPanel{
 
+
+    background: #70858f;
     float: left;
-    border: 2px solid black;
     height: 100%;
     width: 50%;
 }
