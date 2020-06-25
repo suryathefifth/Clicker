@@ -1,0 +1,74 @@
+///////////////////////
+definitions:
+///////////////////////
+
+actions: data from app to the state storage using store.dispatch. each action is a JS object and must have a type: STRING LITERAL in it
+
+reducer: takes the previous state and action, calculates next state, and returns it
+
+[i didnt get to the rest of the basics but i will tomorrow i think]
+
+
+
+
+
+
+
+
+///////////////////////
+action examples:
+///////////////////////
+
+function incrementUnits(num)
+{	return{type : INC_UNITS, num}	}
+
+function decrementUnits(num)
+{	return{type : DEC_UNITS, num}	} //i think im missing some syntax with the num... ill have to check
+
+
+
+
+
+///////////////////////
+reducer example:
+///////////////////////
+
+const initialState = {
+	units : 0
+	unitsPerSecond : 0
+	upgradesPurchased: [0, 0, 0, 0, 0] //i envision these just being boolean flags. might be too simple tho
+}
+
+function ?//idk what to name reducer function and idk where any of this stuff goes yet// (state, action) {
+	if( typeof state === 'undefined') {return initialState}
+	
+	switch (action.type //here's where the action's type comes in// ) {
+		case INC_UNITS:
+			return Object.assign({}, state, {units: units + 1 //idk if its units + 1 or this.state.units + 1 or something like that. i need to learn more about what 'this' actually refers to when you use it // }
+		case DEC_UNITS:
+			return Object.assign({}, state, {units: units - 1}
+		default: return state
+	}
+}
+//i dont really understand what the Object.assign is doing, i think its making a copy of the state. idk you need to make a copy but the tutorial says you should
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
