@@ -7,6 +7,23 @@ import UpgradePanel from './UpgradePanel.js'
 
 class Wrapper extends React.Component {
     
+    constructor(props) {
+        super(props);
+        this.state = {
+            currentUnits : 0,
+            currentUnitsPerSecond : 0,
+            upgradesPurchased : [0, 0, 0, 0, 0]
+        };
+    }
+
+    addUnit() {
+
+        this.setState({
+            currentUnits : this.state['currentUnits'] + 1
+        })
+
+    }
+
     render() {
         return (
             <div className="Wrapper">

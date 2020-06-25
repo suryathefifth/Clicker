@@ -7,12 +7,12 @@ class UpgradePanel extends React.Component {
 
     addTier1 = () => {
         this.setState({tier1num : this.state['tier1num'] + 1})
-        console.log(this.state['tier1num'])
+
     }
 
     addTier2 = () => {
         this.setState({tier2num : this.state['tier2num'] + 1})
-        console.log(this.state['tier2num'])
+
     }
 
     render() {
